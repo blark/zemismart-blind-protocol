@@ -22,14 +22,13 @@
 ## Transmission Structure
 
 ```
-    ┌────────┐ ┌────┐ ┌────┐ ┌────┐ ┌────┐ ┌────┐ ┌────┐       ┌────────┐ ┌────┐
-    │preamble│ │code│ │code│ │code│ │code│ │code│ │code│       │preamble│ │code│ ...
-    └────────┘ └────┘ └────┘ └────┘ └────┘ └────┘ └────┘       └────────┘ └────┘
-               ↑      ↑      ↑      ↑      ↑      ↑      ↑                 ↑
-             sync   sync   sync   sync   sync   sync   GAP              sync
-           (~4960µs)                              (5000-19000µs)
+┌────────┐ ┌────┐ ┌────┐ ┌────┐ ┌────┐ ┌────┐ ┌────┐        ┌────────┐ ┌────┐
+│preamble│ │code│ │code│ │code│ │code│ │code│ │code│        │preamble│ │code│...
+└────────┘ └────┘ └────┘ └────┘ └────┘ └────┘ └────┘        └────────┘ └────┘
+          ↑      ↑      ↑      ↑      ↑      ↑         ↑              ↑
+         sync   sync   sync   sync   sync   sync      GAP           sync
 
-    |<----------------- burst 1 (×6 codes) --------------->|   |<----- burst 2 ...
+|<----------------- burst 1 (×6 codes) --------------->|   |<----- burst 2 ...
 ```
 
 - **preamble**: 8-bit `0xFF` (all 1s)
