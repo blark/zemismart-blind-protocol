@@ -2,6 +2,8 @@
 
 Reverse-engineered RF protocol for Zemismart motorized blind/shade remotes.
 
+![Zemismart 16-channel remote](remote.jpg)
+
 ## Quick Start
 
 **Decode a captured payload:**
