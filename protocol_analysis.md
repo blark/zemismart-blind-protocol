@@ -1,6 +1,5 @@
 # Blind Controller Protocol Analysis
 
-**Date**: 2024-11-27
 **Device**: Zemismart motorized blind/shade controller remotes
 **Remotes analyzed**: Living room (`0x93`), Office (`0x7c`), Spare room (`0x45`)
 
